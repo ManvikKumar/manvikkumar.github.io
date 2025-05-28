@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Manvik Kumar</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
@@ -28,25 +28,24 @@
     }
 
     header {
-      background-color: var(--accent-color);
-      color: white;
       padding: 10px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      border-bottom: 3px solid var(--accent-color);
     }
 
     nav a {
-      margin: 0 10px;
+      margin: 0 15px;
       text-decoration: none;
-      color: white;
+      color: var(--text-color);
       font-weight: bold;
     }
 
     .theme-toggle {
       background: none;
       border: none;
-      color: white;
+      color: var(--text-color);
       font-size: 1.2em;
       cursor: pointer;
     }
@@ -58,7 +57,7 @@
     }
 
     .profile-pic {
-      width: 150px;
+      width: 180px;
       border-radius: 50%;
       margin-bottom: 10px;
     }
@@ -72,47 +71,23 @@
       padding-bottom: 5px;
     }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 15px;
-    }
-
-    .gallery-item {
-      background: var(--bg-color);
-      border: 1px solid var(--accent-color);
-      padding: 10px;
-      border-radius: 8px;
-      transition: transform 0.2s;
-    }
-
-    .gallery-item:hover {
-      transform: scale(1.05);
-    }
-
-    .gallery-item img {
-      width: 100%;
-      height: auto;
-      border-radius: 4px;
-    }
-
-    .gallery-item h3 {
-      margin: 10px 0 5px;
+    .links a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: var(--accent-color);
     }
   </style>
 </head>
 
 <body>
   <header>
-    <div>
-      <strong>Manvik Kumar</strong>
-      <nav>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
-      </nav>
-    </div>
+    <div><strong>Manvik Kumar</strong></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="portfolio.html">Portfolio</a>
+    </nav>
     <button class="theme-toggle" onclick="toggleTheme()">
       <i id="theme-icon" class="fas fa-moon"></i>
     </button>
@@ -124,7 +99,12 @@
       <h1>Manvik Kumar</h1>
     </div>
 
-    <div id="education" class="section">
+    <div class="section">
+      <h2>About Me</h2>
+      <p>I’m Manvik Kumar, passionate about aerospace, CAD, CFD, and the intersection of engineering and sustainability. This website showcases my journey, work, and aspirations in engineering and design.</p>
+    </div>
+
+    <div class="section">
       <h2>Education</h2>
       <p><strong>Delhi Public School RK Puram</strong> – High School Diploma</p>
       <ul>
@@ -133,63 +113,11 @@
       </ul>
     </div>
 
-    <div id="experience" class="section">
-      <h2>Professional Experience</h2>
-      <p><strong>Vimanika Nexus – RWDC</strong>: Led UAV forest fire project, 2nd place globally.</p>
-      <p><strong>National Space Society</strong>: Interned, authored article on MOXIE, organized SpaceHack at IIIT-Delhi.</p>
-      <p><strong>Exun Club</strong>: Head of 3D Design, organized Exun 2023–24.</p>
-      <p><strong>Digex Club</strong>: Graphic Designer, led team at DIGEX event.</p>
-      <p><strong>AEROSS</strong>: Event Lead, collaborated in international design competitions.</p>
-    </div>
-
-    <div id="skills" class="section">
-      <h2>Skills</h2>
-      <ul>
-        <li>Computer Aided Design (CAD), Blender, Fusion 360, AutoCAD</li>
-        <li>CFD Simulations, Simscale</li>
-        <li>Web Development, Aeromodelling, Orbital Mechanics</li>
-      </ul>
-    </div>
-
-    <div id="portfolio" class="section">
-      <h2>Portfolio</h2>
-      <div class="gallery">
-        <div class="gallery-item">
-          <img src="project1.jpg" alt="Project 1">
-          <h3>UAV Forest Fire Response</h3>
-          <p>Conceptualized and simulated a UAV to detect and respond to forest fires; 2nd place globally at RWDC.</p>
-        </div>
-        <div class="gallery-item">
-          <img src="project2.jpg" alt="Project 2">
-          <h3>MOXIE Article</h3>
-          <p>Published work on NASA’s MOXIE tech in the NSS journal, highlighting oxygen production on Mars.</p>
-        </div>
-        <div class="gallery-item">
-          <img src="project3.jpg" alt="Project 3">
-          <h3>3D Design Work</h3>
-          <p>Showcase of Fusion 360 and Blender models used in school tech exhibitions and competitions.</p>
-        </div>
-        <!-- Add more projects as needed -->
-      </div>
-    </div>
-
     <div class="section">
-      <h2>Research Statement</h2>
-      <p>I’m deeply interested in the intersection of aerospace and environmental sustainability. My research focuses on accessible space technology, efficient resource utilization, and improving aerospace systems through design simulations and CAD innovations. From leading international UAV design efforts to co-authoring patents and publications, I aim to blend theoretical science with practical engineering to address real-world challenges — both on Earth and beyond.</p>
-    </div>
-
-    <div class="section">
-      <h2>Volunteering & Awards</h2>
-      <p><strong>Volunteering:</strong> Royal Aeronautical Society, Aasha NGO, Harvard IR Scholars’ Program, CyberX, Catalyst Clan, Asphalt Club</p>
-      <p><strong>Awards:</strong> Lodha Genius Scholar, IRIS Cohort Qualifier, NASA NTL Winner, Red Blazer recipient, RWDC 1st & 2nd Place</p>
-    </div>
-
-    <div class="section">
-      <h2>Quick Links</h2>
-      <p>
-        <a href="mailto:manvik.kumar@email.com" target="_blank"><i class="fas fa-envelope"></i> Email</a> | 
-        <a href="https://www.linkedin.com/in/manvik-kumar" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> | 
-        <a href="https://github.com/manvik-codes" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <h2>Links</h2>
+      <p class="links">
+        <a href="https://www.linkedin.com/in/manvik-kumar" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="resume.pdf" target="_blank"><i class="fas fa-file"></i> Resume</a>
       </p>
     </div>
   </div>

@@ -1,152 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manvik Kumar</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #000000;
+      --card-bg: #f5f5f5;
+    }
+
+    [data-theme="dark"] {
+      --bg-color: #121212;
+      --text-color: #f5f5f5;
+      --card-bg: #1e1e1e;
+    }
+
+    * {
       margin: 0;
       padding: 0;
-      background-color: #f7f9fc;
-      color: #333;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
     }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
     header {
-      background-color: #1e293b;
-      color: white;
-      padding: 2rem;
       display: flex;
       align-items: center;
-      gap: 2rem;
+      justify-content: space-between;
+      padding: 2rem;
+      background-color: var(--card-bg);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
-    header img {
-      width: 120px;
-      height: 120px;
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .profile img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
       object-fit: cover;
-      border-radius: 100px;
-      border: 3px solid white;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+
+    .profile-info h1 {
+      font-size: 2rem;
+      font-weight: 800;
     }
+
+    .profile-info p {
+      font-size: 1rem;
+      color: gray;
+    }
+
+    .theme-toggle {
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+    }
+
     main {
       padding: 2rem;
-      max-width: 800px;
-      margin: 0 auto;
+      max-width: 900px;
+      margin: auto;
     }
+
     section {
       margin-bottom: 2rem;
     }
+
     h2 {
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      border-bottom: 2px solid var(--text-color);
+      display: inline-block;
     }
+
+    p, li {
+      margin: 0.5rem 0;
+      line-height: 1.6;
+    }
+
     ul {
-      padding-left: 1.5rem;
+      padding-left: 1.2rem;
     }
   </style>
 </head>
+
 <body>
   <header>
-    <img src="mypic.jpg" alt="Manvik Kumar" />
-    <div>
-      <h1>Manvik Kumar</h1>
-      <p>Email: manvik13@gmail.com | Phone: +91 9599795370</p>
-      <p><a href="https://linkedin.com/in/manvik-kumar" target="_blank" style="color: #93c5fd">LinkedIn</a></p>
+    <div class="profile">
+      <img src="mypic.jpg" alt="Manvik Kumar">
+      <div class="profile-info">
+        <h1>Manvik Kumar</h1>
+        <p>Aerospace Enthusiast | CAD Designer | Innovation Evangelist</p>
+      </div>
     </div>
+    <button class="theme-toggle" id="themeToggle">🌙</button>
   </header>
+
   <main>
     <section>
-      <h2>Education</h2>
-      <p><strong>Delhi Public School RK Puram</strong><br>
-      High School Diploma (March 2022 - Present)<br>
-      Grade 10: 96.6% | Grade 11: 87.2%</p>
+      <h2>About Me</h2>
+      <p>I'm a high school innovator deeply passionate about aerospace systems, CAD, fluid dynamics, and solving complex real-world challenges. I've worked across international aviation competitions, NGO-based campaigns, and student-led aerospace organizations—always striving to bridge engineering precision with social impact.</p>
     </section>
 
     <section>
-      <h2>Professional Experience</h2>
+      <h2>Resume Highlights</h2>
       <ul>
-        <li><strong>Vimanika Nexus – Real World Design Challenge – FAA</strong><br>
-        Project Manager (May 2023 – April 2024)<br>
-        Led a team to design a UAV for forest fire monitoring, presenting to FAA judges; used CAD, CFD, and stress tests; 2nd Place Internationally; received a Merit Award for Innovation.</li>
-
-        <li><strong>New Delhi Chapter of the National Space Society</strong><br>
-        Intern (June 2023 – September 2023)<br>
-        Authored a MOXIE-based article; helped organize SpaceHack during Esya 2023 at IIIT-Delhi.</li>
-
-        <li><strong>Exun, DPS RK Puram</strong><br>
-        3D Design Department Head (May 2023 – Present)<br>
-        Led Blender-based media creation, won competitions, organized Exun 2023–24.</li>
-
-        <li><strong>Digex, DPS RK Puram</strong><br>
-        Graphic Designer (2022 – Present)<br>
-        Led design teams, organized Digex events, participated in national design contests.</li>
-
-        <li><strong>AEROSS, DPS RK Puram</strong><br>
-        Member (2022 – Present)<br>
-        Event Lead of Cosmoverse with 1500+ global participants; worked on real-world aerospace problem solving.</li>
+        <li><strong>Project Manager</strong> at Vimanika Nexus – Real World Design Challenge (RWDC) – FAA (2nd Place Internationally)</li>
+        <li><strong>Intern</strong> at NDSS – Wrote on MOXIE, managed events like SpaceHack at IIIT Delhi</li>
+        <li><strong>Department Head</strong> at Exun Club – Blender/3D, inter-school wins & techfest management</li>
+        <li><strong>Graphic Designer</strong> at Digex – Leading design for events & winning national contests</li>
+        <li><strong>Event Lead</strong> for Cosmoverse (1500+ global participants)</li>
       </ul>
     </section>
 
     <section>
-      <h2>Publications</h2>
-      <ul>
-        <li><strong>My Eye</strong> – Low Cost Visual Aid (Co-author: Nabhay Khanna)</li>
-        <li><strong>INPCC</strong> – New Age Catalytic Converter (Patent pending; Co-author: Krish Shah)</li>
-      </ul>
+      <h2>Research Statement</h2>
+      <p>I am currently focused on interdisciplinary aerospace innovations—especially those at the intersection of sustainability, computational modeling, and human systems. My aim is to develop high-impact, low-cost systems for both Earth and extraterrestrial environments. I’m particularly drawn to bio-inspired design, in-situ resource utilization, and the future of off-Earth living.</p>
     </section>
 
     <section>
-      <h2>Volunteering & Extracurriculars</h2>
+      <h2>Volunteering & Awards</h2>
       <ul>
-        <li>Student Affiliate, Royal Aeronautical Society (Since Nov 2022)</li>
-        <li>Chapter Member, New Delhi Space Society</li>
-        <li>Founding Creative & Social Media Head, Aasha NGO</li>
-        <li>Harvard Undergraduate International Relations Scholars’ Program Cohort</li>
-        <li>Youth Ideathon Top 1000 Qualifier</li>
-        <li>Founding Member, CyberX (Cybersecurity Society, DPS RK Puram)</li>
-        <li>3D Modeller and Content Writer at Catalyst Clan & Asphalt Club</li>
-        <li>Active volunteer with the Think Club and Geography Club</li>
-        <li>Debater at Ministry of Education Innovation Cell event</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Awards</h2>
-      <ul>
-        <li>Lodha Genius Program – 100% Scholarship</li>
-        <li>IRIS Cohort 2 Qualifier</li>
-        <li>International 2nd Place – 2024 RWDC</li>
-        <li>Winner – NASA NTL Recycling Air Challenge (Team PlanetX)</li>
-        <li>Best Invention Award – IRIE 2023, UiTM Malaysia</li>
-        <li>Innovation Category Winner – RWDC 2023</li>
-        <li>State Challenge Winner – RWDC 2023 & 2024</li>
-        <li>Scholar Badge – Academic Excellence 2023-24, 2024-25</li>
-        <li>Red Blazer & Red Pin – Co-curricular Distinction</li>
-        <li>Runners-up – Indian Space Settlement Design Competition 2022-23</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>CAD (Fusion 360, AutoCAD)</li>
-        <li>Blender</li>
-        <li>Computational Fluid Dynamics (SimScale)</li>
-        <li>Aeromodelling</li>
-        <li>Orbital Mechanics</li>
-        <li>Web Development</li>
+        <li>Student Affiliate, Royal Aeronautical Society</li>
+        <li>Top 1000, Youth Ideathon</li>
+        <li>Winner, NASA NTL Junior Challenge (Team PlanetX)</li>
+        <li>Best Invention Award, IRIE-2023 (Malaysia)</li>
+        <li>Red Blazer and Pin – Principal Awards for Co-Curricular Excellence</li>
       </ul>
     </section>
 
     <section>
       <h2>Projects</h2>
-      <p><em>Projects coming soon...</em></p>
+      <p><em>You'll find my featured technical projects and simulations here soon.</em></p>
     </section>
   </main>
+
+  <script>
+    const toggle = document.getElementById('themeToggle');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme) {
+      document.documentElement.setAttribute('data-theme', currentTheme);
+      toggle.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+    }
+
+    toggle.addEventListener('click', () => {
+      let theme = document.documentElement.getAttribute('data-theme');
+      if (theme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+        toggle.textContent = '🌙';
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+        toggle.textContent = '☀️';
+      }
+    });
+  </script>
 </body>
+
 </html>

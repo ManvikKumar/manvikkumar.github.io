@@ -3,102 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Personal website of Manvik - Aspiring Engineer, Researcher, and Builder." />
-  <title>Manvik | Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Manvik Kumar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f9fc;
+      color: #333;
+    }
+    header {
+      background-color: #1e293b;
+      color: white;
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    header img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 100px;
+      border: 3px solid white;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <!-- Navbar -->
-  <nav class="bg-white shadow-md p-4 flex justify-between items-center sticky top-0 z-50">
-    <h1 class="text-xl font-bold">Manvik</h1>
-    <div class="space-x-4">
-      <a href="#about" class="hover:text-blue-600">About</a>
-      <a href="#research" class="hover:text-blue-600">Research</a>
-      <a href="#achievements" class="hover:text-blue-600">Achievements</a>
-      <a href="#skills" class="hover:text-blue-600">Skills</a>
-      <a href="#projects" class="hover:text-blue-600">Projects</a>
-      <a href="#contact" class="hover:text-blue-600">Contact</a>
+<body>
+  <header>
+    <img src="mypic.jpg" alt="Manvik Kumar" />
+    <div>
+      <h1>Manvik Kumar</h1>
+      <p>Email: manvik13@gmail.com | Phone: +91 9599795370</p>
+      <p><a href="https://linkedin.com/in/manvik-kumar" target="_blank" style="color: #93c5fd">LinkedIn</a></p>
     </div>
-  </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Education</h2>
+      <p><strong>Delhi Public School RK Puram</strong><br>
+      High School Diploma (March 2022 - Present)<br>
+      Grade 10: 96.6% | Grade 11: 87.2%</p>
+    </section>
 
-  <!-- Hero Section -->
-  <section class="text-center py-20 bg-gradient-to-br from-blue-100 to-white">
-    <h2 class="text-4xl font-extrabold mb-4">Hi, I'm Manvik</h2>
-    <p class="text-lg">Aspiring Engineer | Research Enthusiast | Builder of the Unbuilt</p>
-  </section>
+    <section>
+      <h2>Professional Experience</h2>
+      <ul>
+        <li><strong>Vimanika Nexus – Real World Design Challenge – FAA</strong><br>
+        Project Manager (May 2023 – April 2024)<br>
+        Led a team to design a UAV for forest fire monitoring, presenting to FAA judges; used CAD, CFD, and stress tests; 2nd Place Internationally; received a Merit Award for Innovation.</li>
 
-  <!-- About Me -->
-  <section id="about" class="max-w-4xl mx-auto py-12 px-6">
-    <h2 class="text-2xl font-bold mb-4">About Me</h2>
-    <p class="text-gray-700">
-      I’m a curious mechanical mind passionate about building solutions that last. From aerospace systems to bio-inspired energy solutions, I thrive where science meets utility. With a sharp grasp on CAD, airframe design, and an emerging interest in computational simulations and machine learning, I enjoy working at the edge of engineering innovation. 
-      <br><br>
-      My journey includes leading independent research, publishing in a scientific journal, and working with organizations to understand the on-ground impact of sustainability efforts. When I’m not designing or researching, I’m probably analyzing how the next-gen aerospace system could be lighter, stronger, and smarter.
-    </p>
-  </section>
+        <li><strong>New Delhi Chapter of the National Space Society</strong><br>
+        Intern (June 2023 – September 2023)<br>
+        Authored a MOXIE-based article; helped organize SpaceHack during Esya 2023 at IIIT-Delhi.</li>
 
-  <!-- Research Statement -->
-  <section id="research" class="bg-gray-100 py-12 px-6">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-2xl font-bold mb-4">Research Statement</h2>
-      <p class="text-gray-700">
-        My research focuses on advancing sustainability and design in engineering — particularly in the convergence of mechanical systems and environmental solutions. I've explored plant-based microfuels, material behavior under field effects, and system-level design challenges. My goal is to contribute to research that not only pushes scientific boundaries but also offers practical, scalable solutions for a changing world.
-      </p>
-    </div>
-  </section>
+        <li><strong>Exun, DPS RK Puram</strong><br>
+        3D Design Department Head (May 2023 – Present)<br>
+        Led Blender-based media creation, won competitions, organized Exun 2023–24.</li>
 
-  <!-- Achievements -->
-  <section id="achievements" class="max-w-4xl mx-auto py-12 px-6">
-    <h2 class="text-2xl font-bold mb-4">Achievements</h2>
-    <ul class="list-disc list-inside text-gray-700 space-y-2">
-      <li>Scientific journal publication: EcoWave AgroHub</li>
-      <li>NGO Internship: Aasha (Founding Social Media & Creative Head)</li>
-      <li>Member, National Space Society (New Delhi Chapter)</li>
-      <li>Selected in Harvard Undergraduate International Relations Scholars’ Program</li>
-      <li>Top 1000 Youth Ideathon Qualifier</li>
-      <li>Winner, RWDC International Second Place & Innovation Category</li>
-      <li>Winner, NASA NTL Recycling Air Beyond Earth Challenge</li>
-      <li>IRIS Cohort 2 Qualifier</li>
-      <li>Red Blazer and Red Pin recipient for co-curricular excellence</li>
-    </ul>
-  </section>
+        <li><strong>Digex, DPS RK Puram</strong><br>
+        Graphic Designer (2022 – Present)<br>
+        Led design teams, organized Digex events, participated in national design contests.</li>
 
-  <!-- Skills -->
-  <section id="skills" class="bg-gray-100 py-12 px-6">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-2xl font-bold mb-4">Skills</h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-gray-700">
-        <div>Computer Aided Design (CAD)</div>
-        <div>Fusion 360</div>
-        <div>Blender</div>
-        <div>CFD (Computational Fluid Dynamics)</div>
-        <div>AutoCAD</div>
-        <div>Orbital Mechanics</div>
-        <div>Simscale</div>
-        <div>Aero Modelling</div>
-        <div>Web Development</div>
-      </div>
-    </div>
-  </section>
+        <li><strong>AEROSS, DPS RK Puram</strong><br>
+        Member (2022 – Present)<br>
+        Event Lead of Cosmoverse with 1500+ global participants; worked on real-world aerospace problem solving.</li>
+      </ul>
+    </section>
 
-  <!-- Projects (Placeholder) -->
-  <section id="projects" class="max-w-4xl mx-auto py-12 px-6">
-    <h2 class="text-2xl font-bold mb-4">Projects</h2>
-    <p class="text-gray-700">This section is under construction. Check back soon for exciting work!</p>
-  </section>
+    <section>
+      <h2>Publications</h2>
+      <ul>
+        <li><strong>My Eye</strong> – Low Cost Visual Aid (Co-author: Nabhay Khanna)</li>
+        <li><strong>INPCC</strong> – New Age Catalytic Converter (Patent pending; Co-author: Krish Shah)</li>
+      </ul>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="bg-white py-12 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
-      <p class="text-gray-700">Feel free to reach out via email or connect on LinkedIn!</p>
-      <p class="mt-2">📧 <a class="text-blue-600" href="mailto:manvik13@gmail.com">manvik13@gmail.com</a></p>
-      <p class="mt-1">🔗 <a class="text-blue-600" href="https://linkedin.com/in/manvik-kumar" target="_blank">linkedin.com/in/manvik-kumar</a></p>
-    </div>
-  </section>
+    <section>
+      <h2>Volunteering & Extracurriculars</h2>
+      <ul>
+        <li>Student Affiliate, Royal Aeronautical Society (Since Nov 2022)</li>
+        <li>Chapter Member, New Delhi Space Society</li>
+        <li>Founding Creative & Social Media Head, Aasha NGO</li>
+        <li>Harvard Undergraduate International Relations Scholars’ Program Cohort</li>
+        <li>Youth Ideathon Top 1000 Qualifier</li>
+        <li>Founding Member, CyberX (Cybersecurity Society, DPS RK Puram)</li>
+        <li>3D Modeller and Content Writer at Catalyst Clan & Asphalt Club</li>
+        <li>Active volunteer with the Think Club and Geography Club</li>
+        <li>Debater at Ministry of Education Innovation Cell event</li>
+      </ul>
+    </section>
 
-  <footer class="text-center py-4 text-gray-500 text-sm">
-    © 2025 Manvik. All rights reserved.
-  </footer>
+    <section>
+      <h2>Awards</h2>
+      <ul>
+        <li>Lodha Genius Program – 100% Scholarship</li>
+        <li>IRIS Cohort 2 Qualifier</li>
+        <li>International 2nd Place – 2024 RWDC</li>
+        <li>Winner – NASA NTL Recycling Air Challenge (Team PlanetX)</li>
+        <li>Best Invention Award – IRIE 2023, UiTM Malaysia</li>
+        <li>Innovation Category Winner – RWDC 2023</li>
+        <li>State Challenge Winner – RWDC 2023 & 2024</li>
+        <li>Scholar Badge – Academic Excellence 2023-24, 2024-25</li>
+        <li>Red Blazer & Red Pin – Co-curricular Distinction</li>
+        <li>Runners-up – Indian Space Settlement Design Competition 2022-23</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>CAD (Fusion 360, AutoCAD)</li>
+        <li>Blender</li>
+        <li>Computational Fluid Dynamics (SimScale)</li>
+        <li>Aeromodelling</li>
+        <li>Orbital Mechanics</li>
+        <li>Web Development</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <p><em>Projects coming soon...</em></p>
+    </section>
+  </main>
 </body>
 </html>

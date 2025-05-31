@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications - Manvik Kumar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #000000;
+      --accent-color: #0077cc;
+    }
+
+    [data-theme="dark"] {
+      --bg-color: #121212;
+      --text-color: #ffffff;
+      --accent-color: #1e90ff;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 3px solid var(--accent-color);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: bold;
+    }
+
+    .theme-toggle {
+      background: none;
+      border: none;
+      color: var(--text-color);
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .publication {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .publication img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .pub-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .pub-text h3 {
+      margin-top: 0;
+      color: var(--accent-color);
+    }
+
+    .pub-text a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    .pub-text a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div><strong>Manvik Kumar</strong></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="achievements.html">Achievements</a>
+    </nav>
+    <button class="theme-toggle" onclick="toggleTheme()">
+      <i id="theme-icon" class="fas fa-moon"></i>
+    </button>
+  </header>
+
+  <div class="container">
+    <h2>📚 Publications</h2>
+
+    <div class="publication">
+      <img src="myeye.png" alt="My Eye Publication Image">
+      <div class="pub-text">
+        <h3>📘 <em>My Eye: Assistive Technology for the Visually Impaired</em></h3>
+        <p><strong>Collaborators:</strong> Manvik Kumar, Nabhay Khanna</p>
+        <p><strong>View code:</strong> <a href="https://github.com/Nabhay/Blind-Reader" target="_blank">github.com/Nabhay/Blind-Reader</a></p>
+        <p><strong>Demos:</strong>
+          <a href="https://drive.google.com/file/d/1G2TvDlKQCe6j92T3tDNQMIA2i4LiRCbk/view?usp=sharing" target="_blank">Surroundings Description</a> |
+          <a href="https://drive.google.com/file/d/16OUkyCsi_mkMe9mBe5gwf2CuZLkXN_XO/view?usp=sharing" target="_blank">Text-to-Speech in Real-Time</a>
+        </p>
+        <p><strong>Summary:</strong><br>
+          <em>My Eye</em> is a low-cost, AI-powered headset designed to enhance independence for visually impaired individuals by converting visual surroundings into real-time audio feedback. It empowers users to read signs, navigate unfamiliar spaces, and interact with their environment using spoken guidance—all for under $30.
+        </p>
+        <p>
+          What makes <em>My Eye</em> unique is its blend of real-time text recognition, object detection, and an intelligent assistant—all integrated into a compact, user-friendly system. With a focus on accessibility, affordability, and real-world utility, <em>My Eye</em> bridges the gap between vision and voice, helping users move through the world with greater confidence and autonomy.
+        </p>
+      </div>
+    </div>
+
+    <div class="publication">
+      <img src="inpcc.png" alt="Amethyst Publication Image">
+      <div class="pub-text">
+        <h3><em>Amethyst: Integrated No-Pollution Catalytic Converter System</em></h3>
+        <p><strong>Collaborators:</strong> Manvik Kumar, Krish Shah and Vedant Tejaswi</p>
+        <p><strong>Published on:</strong> [Insert Date or Journal/Platform Name, if applicable]</p>
+        <p><strong>View renders & CFD study:</strong> <a href="#">Fusion 360 Renders</a> | <a href="#">CFD Wall Calculation</a></p>
+        <p><strong>Summary:</strong><br>
+          <em>Amethyst</em> is an advanced, three-stage emission control system designed to drastically reduce all major vehicular pollutants—including CO, NOx, and even CO₂—while producing valuable byproducts like solid carbon and oxygen. Unlike traditional converters, Amethyst integrates a primary oxidation chamber, urea-based SCR unit, and a molten carbonate electrolysis module into a single compact design.
+        </p>
+        <p>
+          Backed by CFD simulations and ANSYS Chemkin reaction modeling, <em>Amethyst</em> achieves up to 80% CO₂ conversion efficiency and a 50–70% overall emission reduction. With lower manufacturing costs, self-cleaning automation, and compatibility with existing exhaust systems, this solution presents a powerful, scalable alternative to electric vehicle adoption—especially in transitional economies.
+        </p>
+        <p>
+          Designed for efficiency, sustainability, and real-world adaptability, <em>Amethyst</em> redefines what clean combustion can be.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute("data-theme");
+      const newTheme = currentTheme === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", newTheme);
+      localStorage.setItem("theme", newTheme);
+      document.getElementById("theme-icon").className = newTheme === "dark" ? "fas fa-sun" : "fas fa-moon";
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const savedTheme = localStorage.getItem("theme") || "light";
+      document.documentElement.setAttribute("data-theme", savedTheme);
+      document.getElementById("theme-icon").className = savedTheme === "dark" ? "fas fa-sun" : "fas fa-moon";
+    });
+  </script>
+</body>
+
+</html>
